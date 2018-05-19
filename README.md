@@ -17,6 +17,7 @@ Sample output
         Sarah Palmer, YES, Robin and Sari Washington
         Joe Smith, NO, Bob and Jamie Smith
 
+---
 ### EXTRA CREDIT (1/2)
 #### Create 18 text files, to serve as welcome letters to the players' guardians
 * 1 file should be created for each player
