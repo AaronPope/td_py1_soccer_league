@@ -13,12 +13,12 @@ General submission guidelines are provided by Treehouse and can be found here: h
 #### Create a text file named 'teams.txt' that includes:
     - [ ] the name of a team
     - [ ] the players on the team
-    * Sample output
+* Sample output
 
-            Sharks
-            Frank Jones, YES, Jim and Jan Jones
-            Sarah Palmer, YES, Robin and Sari Washington
-            Joe Smith, NO, Bob and Jamie Smith
+        Sharks
+        Frank Jones, YES, Jim and Jan Jones
+        Sarah Palmer, YES, Robin and Sari Washington
+        Joe Smith, NO, Bob and Jamie Smith
 
 ## EXTRA CREDIT (1/2)
 #### Create 18 text files, to serve as welcome letters to the players' guardians
@@ -27,7 +27,7 @@ General submission guidelines are provided by Treehouse and can be found here: h
     Use the players name as the name of the file
         -- in lowercase
         -- with an underscore between first and last name
-    *Example:* "jimmy_johns.txt
+*Example:* "jimmy_johns.txt
 
 ## EXTRA CREDIT (2/2)
 #### Ensure that each file includes the following: 
