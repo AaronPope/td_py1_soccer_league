@@ -13,7 +13,6 @@ General submission guidelines are provided by Treehouse and can be found here: h
     * the name of a team
     * the players on the team
 * Sample output
-
         Sharks
         Frank Jones, YES, Jim and Jan Jones
         Sarah Palmer, YES, Robin and Sari Washington
