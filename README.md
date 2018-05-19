@@ -27,7 +27,7 @@ General submission guidelines are provided by Treehouse and can be found here: h
     Use the players name as the name of the file
         -- in lowercase
         -- with an underscore between first and last name
-    E.g. - "jimmy_johns.txt
+    *Example:* "jimmy_johns.txt
 
 ## EXTRA CREDIT (2/2)
 #### Ensure that each file includes the following: 
@@ -35,8 +35,10 @@ General submission guidelines are provided by Treehouse and can be found here: h
     - player's name
     - team name
     - date & time of first practice
+*Example:*
 > Dear [guardian(s)],
+>
+> [player name] will be on the [team.title()].
 
-> [player name] will be on the [team.title()]
 > Their first practice will be on [date_of_practice]
 
