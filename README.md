@@ -11,9 +11,7 @@ General submission guidelines are provided by Treehouse and can be found here: h
     and the experienced players should be divided equally across the three teams
 #### Create a text file named 'teams.txt' that includes:
     the name of a team
-
-
-
+  
     the players on the team
 * Sample output
 
