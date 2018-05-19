@@ -8,15 +8,15 @@ General submission guidelines are provided by Treehouse and can be found here: h
 # Requirements
 
 #### Teams should have the same number of players
-* and the experienced players should be divided equally across the three teams
+    and the experienced players should be divided equally across the three teams
 #### Create a text file named 'teams.txt' that includes:
-* the name of a team
-* the players on the team
-Sample output
-        Sharks
-        Frank Jones, YES, Jim and Jan Jones
-        Sarah Palmer, YES, Robin and Sari Washington
-        Joe Smith, NO, Bob and Jamie Smith
+    * the name of a team
+    * the players on the team
+* Sample output
+    Sharks
+    Frank Jones, YES, Jim and Jan Jones
+    Sarah Palmer, YES, Robin and Sari Washington
+    Joe Smith, NO, Bob and Jamie Smith
 
 ## EXTRA CREDIT (1/2)
 #### Create 18 text files, to serve as welcome letters to the players' guardians
