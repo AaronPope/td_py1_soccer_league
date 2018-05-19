@@ -1,6 +1,6 @@
-# td_py1_soccer_league
-For Treehouse TechDegree (Python), Unit 1: Build a Soccer League
-
+# Build a Soccer League
+For Treehouse TechDegree (Python), Unit 1
+---
 General submission guidelines are provided by Treehouse and can be found here: http://treehouse-techdegree.s3.amazonaws.com/Student-Project-Submission-Checklist.pdf
 
 
