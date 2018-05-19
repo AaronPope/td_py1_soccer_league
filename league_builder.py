@@ -4,6 +4,7 @@
 
 
 import csv
+import utilities
 
 # Don't execute unless this is the main script
 if __name__ == "__main__":
@@ -51,28 +52,51 @@ if __name__ == "__main__":
         for player in teams[team_name]["roster"]:
             if player["experience"] == "YES":
                 experienced_players_on_team += 1
-        print ("Experienced players on {}: {}".format(team_name, experienced_players_on_team))
+        # Uncomment for debugging... explicitly in the console, a way that's probably ill-advised
+        # print ("Experienced players on {}: {}".format(team_name, experienced_players_on_team))
         return experienced_players_on_team
 
     # TODO: this
-    def write_teams_to_file():
-        pass
+    def write_team_to_file(team):
+        with open ("./output/teams.txt", "a") as file:
+        # write to the file
+            file.write("--- {} ---\n".format(team["team_name"]))
+            for player in team["roster"]:
+                file.write("{}, {}, {}\n".format(
+                    player["name"],
+                    player["experience"],
+                    player["guardian(s)"]
+                ))
+            file.write("\n")
+
+    def write_teams_to_file():    
+        write_team_to_file(teams["sharks"])
+        write_team_to_file(teams["dragons"])
+        write_team_to_file(teams["raptors"])
 
     with open ("soccer_players.csv") as file:
         reader = csv.DictReader(file)
         soccer_players = list(reader)
         players_per_team = len(soccer_players) // len(teams)
+        # TODO: Remove this "debug" item
         print ("PLAYERS PER TEAM: {}".format(players_per_team))
         
         experienced_player_quota = get_experienced_players_count(soccer_players) // len(teams)
+        # TODO: Remove this "debug" item
         print ("EXPERIENCED PLAYERS PER TEAM: {}".format(experienced_player_quota))
 
+        # Loop through the list of players
         for soccer_player in soccer_players:
+            # Extract the required information from the list object
+            # Keys from CSV: 
+                # Name
+                # Height (inches)
+                # Soccer Experience
+                # Guardian Name(s)
+
             player_info = { "name": soccer_player["Name"], 
                             "experience": soccer_player["Soccer Experience"], 
                             "guardian(s)": soccer_player["Guardian Name(s)"]}
-
-
 
             # Experienced players
             if player_info["experience"] == "YES":
@@ -97,6 +121,8 @@ if __name__ == "__main__":
     print_team_roster (teams["raptors"])
 
     write_teams_to_file()
+
+    utilities.print_test()
 
 
 # ---------------------- #
