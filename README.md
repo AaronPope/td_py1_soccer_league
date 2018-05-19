@@ -5,10 +5,10 @@ For Treehouse TechDegree (Python), Unit 1
 General submission guidelines are provided by Treehouse and can be found here: http://treehouse-techdegree.s3.amazonaws.com/Student-Project-Submission-Checklist.pdf
 
 
-# Requirements
-### Teams should have the same number of players
+## Requirements
+#### Teams should have the same number of players
 * and the experienced players should be divided equally across the three teams
-### Create a text file named 'teams.txt' that includes:
+#### Create a text file named 'teams.txt' that includes:
 * the name of a team
 * the players on the team
 Sample output
@@ -18,7 +18,7 @@ Sample output
         Joe Smith, NO, Bob and Jamie Smith
 
 ## EXTRA CREDIT (1/2)
-Create 18 text files, to serve as welcome letters to the players' guardians
+#### Create 18 text files, to serve as welcome letters to the players' guardians
 * 1 file should be created for each player
 * Use the players name as the name of the file
   * in lowercase
@@ -26,10 +26,10 @@ Create 18 text files, to serve as welcome letters to the players' guardians
         E.g. - "jimmy_johns.txt
 
 ## EXTRA CREDIT (2/2)
-* Ensure that each file includes the following: 
-    * Begin with "Dear [guardian(s) name(s)]"
-    * player's name
-    * team name
-    * date & time of first practice
+#### Ensure that each file includes the following: 
+* Begin with "Dear [guardian(s) name(s)]"
+* player's name
+* team name
+* date & time of first practice
 
 
