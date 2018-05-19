@@ -21,19 +21,21 @@ General submission guidelines are provided by Treehouse and can be found here: h
             Joe Smith, NO, Bob and Jamie Smith
 
 ## EXTRA CREDIT (1/2)
-- [ ] Create 18 text files, to serve as welcome letters to the players' guardians
-    * 1 file should be created for each player
+#### Create 18 text files, to serve as welcome letters to the players' guardians
+    1 file should be created for each player
 
-    * Use the players name as the name of the file
+    Use the players name as the name of the file
         -- in lowercase
         -- with an underscore between first and last name
-        E.g. - "jimmy_johns.txt
+    E.g. - "jimmy_johns.txt
 
 ## EXTRA CREDIT (2/2)
-- [ ] Ensure that each file includes the following: 
-    * Begin with "Dear [guardian(s) name(s)]"
-    * player's name
-    * team name
-    * date & time of first practice
-
+#### Ensure that each file includes the following: 
+    - Begin with "Dear [guardian(s) name(s)]"
+    - player's name
+    - team name
+    - date & time of first practice
+    > Dear [guardian(s)]
+    > [player name] will be on the [team.title()]
+    > Their first practice will be on [date_of_practice]
 
