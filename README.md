@@ -20,10 +20,10 @@ Sample output
 
 ### EXTRA CREDIT (1/2)
 #### Create 18 text files, to serve as welcome letters to the players' guardians
-* 1 file should be created for each player
-* Use the players name as the name of the file
-  * in lowercase
-  * with an underscore between first and last name
+    * 1 file should be created for each player
+    * Use the players name as the name of the file
+        * in lowercase
+        * with an underscore between first and last name
         E.g. - "jimmy_johns.txt
 
 ### EXTRA CREDIT (2/2)
