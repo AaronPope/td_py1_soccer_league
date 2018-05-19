@@ -35,7 +35,8 @@ General submission guidelines are provided by Treehouse and can be found here: h
     - player's name
     - team name
     - date & time of first practice
-> Dear [guardian(s)]
+> Dear [guardian(s)],
+
 > [player name] will be on the [team.title()]
 > Their first practice will be on [date_of_practice]
 
