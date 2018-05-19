@@ -21,8 +21,9 @@ General submission guidelines are provided by Treehouse and can be found here: h
 
 ## EXTRA CREDIT (1/2)
 #### Create 18 text files, to serve as welcome letters to the players' guardians
-    * 1 file should be created for each player
-    * Use the players name as the name of the file
+    1 file should be created for each player
+
+    Use the players name as the name of the file
         * in lowercase
         * with an underscore between first and last name
         E.g. - "jimmy_johns.txt
