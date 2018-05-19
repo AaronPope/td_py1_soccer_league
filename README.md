@@ -13,6 +13,7 @@ General submission guidelines are provided by Treehouse and can be found here: h
     the name of a team
 
 
+
     the players on the team
 * Sample output
 
