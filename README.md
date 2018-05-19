@@ -28,9 +28,9 @@ Before you submit your project for review, make sure you can check off all of th
 General submission guidelines are provided by Treehouse and can be found here: http://treehouse-techdegree.s3.amazonaws.com/Student-Project-Submission-Checklist.pdf
 
 
-##### Teams should have the same number of players
-    * and the experienced players should be divided equally across the three teams
-###### Create a text file names 'teams.txt' that includes:
+### Teams should have the same number of players
+* and the experienced players should be divided equally across the three teams
+#### Create a text file names 'teams.txt' that includes:
     * the name of a team
     * the players on the team
     ```Sample output
