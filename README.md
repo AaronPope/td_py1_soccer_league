@@ -30,9 +30,9 @@ General submission guidelines are provided by Treehouse and can be found here: h
 
 ## EXTRA CREDIT (2/2)
 #### Ensure that each file includes the following: 
-* Begin with "Dear [guardian(s) name(s)]"
-* player's name
-* team name
-* date & time of first practice
+    * Begin with "Dear [guardian(s) name(s)]"
+    * player's name
+    * team name
+    * date & time of first practice
 
 
