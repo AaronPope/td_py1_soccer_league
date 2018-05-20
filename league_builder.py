@@ -39,6 +39,8 @@ if __name__ == "__main__":
         # return (team_name, player_list)
         utilities.generate_welcome_letter (player, team)
 
+    # Iterate through the list of all players
+    # Return the number of players that have soccer experience
     def get_experienced_players_count(players):
         number_of_experienced_players = 0
         for player in players:
@@ -46,7 +48,9 @@ if __name__ == "__main__":
                 number_of_experienced_players += 1
         return number_of_experienced_players
 
-    # TODO: Check for valid team name
+    # Iterate through a provided team's roster
+    # Return the number of exprienced players on that roster
+    # (Different from the above because it's for a specific team's roster, not the player list)
     def experienced_players_on_team(team_name):
         experienced_players_on_team = 0
         for player in teams[team_name]["roster"]:
@@ -56,7 +60,7 @@ if __name__ == "__main__":
         # print ("Experienced players on {}: {}".format(team_name, experienced_players_on_team))
         return experienced_players_on_team
 
-    # TODO: this
+    # Save the provided team's roster to the output file 'teams.txt'
     def write_team_to_file(team):
         with open ("output/teams.txt", "a") as file:
         # write to the file
@@ -69,10 +73,11 @@ if __name__ == "__main__":
                 ))
             file.write("\n")
 
+    # Loop through all teams in the team dictionary 
+    #   and call the function to write them to the output file 'teams.txt'
     def write_teams_to_file():    
-        write_team_to_file(teams["sharks"])
-        write_team_to_file(teams["dragons"])
-        write_team_to_file(teams["raptors"])
+        for team in teams:
+            write_team_to_file(teams[team])
 
 
     # Console informational / debug
