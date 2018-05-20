@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
     # TODO: this
     def write_team_to_file(team):
-        with open ("output/teams.txt", "a") as file:
+        with open ("output/_teams.txt", "a") as file:
         # write to the file
             file.write("--- {} ---\n".format(team["team_name"]))
             for player in team["roster"]:
