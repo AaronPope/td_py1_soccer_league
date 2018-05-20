@@ -36,7 +36,6 @@ if __name__ == "__main__":
     # Add a player to a team
     def add_player_to_team (player, team):
         team["roster"].append(player)
-        # return (team_name, player_list)
         utilities.generate_welcome_letter (player, team)
 
     # Iterate through the list of all players
@@ -63,7 +62,6 @@ if __name__ == "__main__":
     # Save the provided team's roster to the output file 'teams.txt'
     def write_team_to_file(team):
         with open ("output/teams.txt", "a") as file:
-        # write to the file
             file.write("--- {} ---\n".format(team["team_name"]))
             for player in team["roster"]:
                 file.write("{}, {}, {}\n".format(
