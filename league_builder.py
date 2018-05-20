@@ -13,10 +13,11 @@ if __name__ == "__main__":
     # Clear the teams output each time the script is run
     with open ("output/teams.txt", "w") as file:
         file.write("")
-# Divide players into three teams
-    # Sharks
-    # Dragons
-    # Raptors    
+
+    # Divide players into three teams
+        # Sharks
+        # Dragons
+        # Raptors    
     teams = {
         "sharks": {
             "team_name": "Sharks", 
@@ -32,20 +33,11 @@ if __name__ == "__main__":
             "first_practice_info": datetime.datetime(2018, 5, 18, 9)},
     }
 
+    # Add a player to a team
     def add_player_to_team (player, team):
         team["roster"].append(player)
         # return (team_name, player_list)
         utilities.generate_welcome_letter (player, team)
-
-    def print_team_roster (team):
-        print ("--- {} ---".format(team["team_name"].upper()))
-        for player in team["roster"]:
-            print ("{}, {}, {}".format(
-                player["name"],
-                player["experience"],
-                player["guardian(s)"]
-            ))
-        print("\n")
 
     def get_experienced_players_count(players):
         number_of_experienced_players = 0
@@ -82,16 +74,29 @@ if __name__ == "__main__":
         write_team_to_file(teams["dragons"])
         write_team_to_file(teams["raptors"])
 
+
+    # Console informational / debug
+    # [done] TODO: Comment or remove for submission
+    # def print_team_roster (team):
+    #     print ("--- {} ---".format(team["team_name"].upper()))
+    #     for player in team["roster"]:
+    #         print ("{}, {}, {}".format(
+    #             player["name"],
+    #             player["experience"],
+    #             player["guardian(s)"]
+    #         ))
+    #     print("\n")
+
     with open ("soccer_players.csv") as file:
         reader = csv.DictReader(file)
         soccer_players = list(reader)
         players_per_team = len(soccer_players) // len(teams)
-        # TODO: Remove this "debug" item
-        print ("PLAYERS PER TEAM: {}".format(players_per_team))
+        # TODO: Comment or remove this for submission
+        # print ("PLAYERS PER TEAM: {}".format(players_per_team))
         
         experienced_player_quota = get_experienced_players_count(soccer_players) // len(teams)
-        # TODO: Remove this "debug" item
-        print ("EXPERIENCED PLAYERS PER TEAM: {}".format(experienced_player_quota))
+        # TODO: Comment or remove this for submission
+        # print ("EXPERIENCED PLAYERS PER TEAM: {}".format(experienced_player_quota))
 
         # Loop through the list of players
         for soccer_player in soccer_players:
@@ -122,13 +127,16 @@ if __name__ == "__main__":
                     add_player_to_team(player_info, teams["dragons"])
                 else:
                     add_player_to_team(player_info, teams["raptors"])
-            
-    # TODO: Remove this
-    print_team_roster(teams["sharks"])
-    print_team_roster (teams["dragons"])
-    print_team_roster (teams["raptors"])
 
     write_teams_to_file()
+
+    # Display teams to console for information / debug
+    # [done] TODO: Comment or remove for submission
+    # print_team_roster(teams["sharks"])
+    # print_team_roster (teams["dragons"])
+    # print_team_roster (teams["raptors"])
+
+    
 
 
 # ---------------------- #
