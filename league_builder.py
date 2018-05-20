@@ -92,18 +92,31 @@ if __name__ == "__main__":
     #         ))
     #     print("\n")
 
+    # Open the CSV file
     with open ("soccer_players.csv") as file:
         reader = csv.DictReader(file)
+
+        # Create a list of players, using the reader
         soccer_players = list(reader)
+
+        # Determine the number of players that should be on a team
+        #  [# of players] / [# of teams]
+        #  NOTE: This asssumes a number of players even divisible across all teams, 
+        #           sufficient for this purpose
         players_per_team = len(soccer_players) // len(teams)
-        # TODO: Comment or remove this for submission
+
+        # [done] TODO: Comment or remove this for submission
         # print ("PLAYERS PER TEAM: {}".format(players_per_team))
         
+        # Determine the number of expereienced players that should be on a team
+        # [# of experienced players] / [# of teams]
         experienced_player_quota = get_experienced_players_count(soccer_players) // len(teams)
-        # TODO: Comment or remove this for submission
+        
+        # [done] TODO: Comment or remove this for submission
         # print ("EXPERIENCED PLAYERS PER TEAM: {}".format(experienced_player_quota))
 
-        # Loop through the list of players
+        # Loop through the list of players and insert them into teams, based on requirements
+        #  (see requirements comment at end of file for full reference)
         for soccer_player in soccer_players:
             # Extract the required information from the list object
             # Keys from CSV: 
@@ -111,7 +124,6 @@ if __name__ == "__main__":
                 # Height (inches)
                 # Soccer Experience
                 # Guardian Name(s)
-
             player_info = { "name": soccer_player["Name"], 
                             "experience": soccer_player["Soccer Experience"], 
                             "guardian(s)": soccer_player["Guardian Name(s)"]}
@@ -133,6 +145,8 @@ if __name__ == "__main__":
                 else:
                     add_player_to_team(player_info, teams["raptors"])
 
+    # After the players have been assigned to appropriate teams, 
+    #  call function to write to 'teams.txt'
     write_teams_to_file()
 
     # Display teams to console for information / debug
@@ -145,7 +159,7 @@ if __name__ == "__main__":
 
 
 # ---------------------- #
-# DELIVERABLES REFERENCE #
+# REQUIREMENTS REFERENCE #
 # ---------------------- #
 #
 # Teams should have the same number of players
