@@ -5,10 +5,14 @@
 
 import csv
 import utilities
+import datetime
 
 # Don't execute unless this is the main script
 if __name__ == "__main__":
 
+    # Clear the teams output each time the script is run
+    with open ("output/teams.txt", "w") as file:
+        file.write("")
 # Divide players into three teams
     # Sharks
     # Dragons
@@ -17,15 +21,15 @@ if __name__ == "__main__":
         "sharks": {
             "team_name": "Sharks", 
             "roster": [],
-            "first_practice_info": "5/15/2018, 4:00 AM "},
+            "first_practice_info": datetime.datetime(2018, 5, 15, 13)},
         "dragons": {
             "team_name": "Dragons", 
             "roster": [],
-            "first_practice_info": "5/17/2018, 3:00 PM"},
+            "first_practice_info": datetime.datetime(2018, 5, 17, 17)},
         "raptors": {
             "team_name": "Raptors", 
             "roster": [],
-            "first_practice_info": "5/18/2018, 1:00 PM"},
+            "first_practice_info": datetime.datetime(2018, 5, 18, 9)},
     }
 
     def add_player_to_team (player, team):
