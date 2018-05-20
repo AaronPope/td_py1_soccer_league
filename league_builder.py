@@ -16,18 +16,22 @@ if __name__ == "__main__":
     teams = {
         "sharks": {
             "team_name": "Sharks", 
-            "roster": []},
+            "roster": [],
+            "first_practice_info": "5/15/2018, 4:00 AM "},
         "dragons": {
             "team_name": "Dragons", 
-            "roster": []},
+            "roster": [],
+            "first_practice_info": "5/17/2018, 3:00 PM"},
         "raptors": {
             "team_name": "Raptors", 
-            "roster": []},
+            "roster": [],
+            "first_practice_info": "5/18/2018, 1:00 PM"},
     }
 
     def add_player_to_team (player, team):
         team["roster"].append(player)
         # return (team_name, player_list)
+        utilities.generate_welcome_letter (player, team)
 
     def print_team_roster (team):
         print ("--- {} ---".format(team["team_name"].upper()))
@@ -58,7 +62,7 @@ if __name__ == "__main__":
 
     # TODO: this
     def write_team_to_file(team):
-        with open ("./output/teams.txt", "a") as file:
+        with open ("output/teams.txt", "a") as file:
         # write to the file
             file.write("--- {} ---\n".format(team["team_name"]))
             for player in team["roster"]:
@@ -121,8 +125,6 @@ if __name__ == "__main__":
     print_team_roster (teams["raptors"])
 
     write_teams_to_file()
-
-    utilities.print_test()
 
 
 # ---------------------- #
