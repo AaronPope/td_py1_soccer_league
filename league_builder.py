@@ -4,11 +4,20 @@
 
 
 import csv
-import utilities
 import datetime
+import os
+import utilities
+
 
 # Don't execute unless this is the main script
 if __name__ == "__main__":
+
+    # Check for existence of output directories
+    #  If they don't exist, create them
+    if not os.path.exists("output"):
+        os.makedirs("output")
+    if not os.path.exists("output/welcome_letters"):
+        os.makedirs("output/welcome_letters")
 
     # Clear the teams output each time the script is run
     with open ("output/teams.txt", "w") as file:
