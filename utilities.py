@@ -8,7 +8,7 @@ def generate_welcome_letter(player, team):
         first_name.lower(), last_name.lower()), "w") as file:
         file.write ("""Dear {},\n
 {} will be playing on the {}.
-Their first practice is on {} at {}.""".format(
+Their first practice is on {} at {:%H:%M}.""".format(
             player["guardian(s)"], 
             player["name"],
             team["team_name"].upper(),
