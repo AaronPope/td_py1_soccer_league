@@ -96,8 +96,7 @@ if __name__ == "__main__":
         # [# of experienced players] / [# of teams]
         experienced_player_quota = get_experienced_players_count(soccer_players) // len(teams)
 
-        # Loop through the list of players and insert them into teams, based on requirements
-        #  (see requirements comment at end of file for full reference)
+        # Loop through the list of players and insert them into teams
         for soccer_player in soccer_players:
             # Extract the required information from the list object
             # Keys from CSV: 
