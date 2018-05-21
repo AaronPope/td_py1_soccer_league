@@ -33,10 +33,12 @@ if __name__ == "__main__":
             "first_practice_info": datetime.datetime(2018, 5, 18, 9)},
     }
 
+
     # Add a player to a team
     def add_player_to_team (player, team):
         team["roster"].append(player)
         utilities.generate_welcome_letter (player, team)
+
 
     # Iterate through the list of all players
     # Return the number of players that have soccer experience
@@ -47,6 +49,7 @@ if __name__ == "__main__":
                 number_of_experienced_players += 1
         return number_of_experienced_players
 
+
     # Iterate through a provided team's roster
     # Return the number of exprienced players on that roster
     # (Different from the above because it's for a specific team's roster, not the player list)
@@ -55,8 +58,6 @@ if __name__ == "__main__":
         for player in teams[team_name]["roster"]:
             if player["experience"] == "YES":
                 experienced_players_on_team += 1
-        # Uncomment for debugging... explicitly in the console, a way that's probably ill-advised
-        # print ("Experienced players on {}: {}".format(team_name, experienced_players_on_team))
         return experienced_players_on_team
 
     # Save the provided team's roster to the output file 'teams.txt'
@@ -78,18 +79,6 @@ if __name__ == "__main__":
             write_team_to_file(teams[team])
 
 
-    # Console informational / debug
-    # [done] TODO: Comment or remove for submission
-    # def print_team_roster (team):
-    #     print ("--- {} ---".format(team["team_name"].upper()))
-    #     for player in team["roster"]:
-    #         print ("{}, {}, {}".format(
-    #             player["name"],
-    #             player["experience"],
-    #             player["guardian(s)"]
-    #         ))
-    #     print("\n")
-
     # Open the CSV file
     with open ("soccer_players.csv") as file:
         reader = csv.DictReader(file)
@@ -102,16 +91,10 @@ if __name__ == "__main__":
         #  NOTE: This asssumes a number of players even divisible across all teams, 
         #           sufficient for this purpose
         players_per_team = len(soccer_players) // len(teams)
-
-        # [done] TODO: Comment or remove this for submission
-        # print ("PLAYERS PER TEAM: {}".format(players_per_team))
-        
+  
         # Determine the number of expereienced players that should be on a team
         # [# of experienced players] / [# of teams]
         experienced_player_quota = get_experienced_players_count(soccer_players) // len(teams)
-        
-        # [done] TODO: Comment or remove this for submission
-        # print ("EXPERIENCED PLAYERS PER TEAM: {}".format(experienced_player_quota))
 
         # Loop through the list of players and insert them into teams, based on requirements
         #  (see requirements comment at end of file for full reference)
@@ -146,42 +129,3 @@ if __name__ == "__main__":
     # After the players have been assigned to appropriate teams, 
     #  call function to write to 'teams.txt'
     write_teams_to_file()
-
-    # Display teams to console for information / debug
-    # [done] TODO: Comment or remove for submission
-    # print_team_roster(teams["sharks"])
-    # print_team_roster (teams["dragons"])
-    # print_team_roster (teams["raptors"])
-
-    
-
-
-# ---------------------- #
-# REQUIREMENTS REFERENCE #
-# ---------------------- #
-#
-# Teams should have the same number of players
-    # and the experienced players should be divided equally across the three teams
-# Create a text file names 'teams.txt' that includes:
-    # the name of a team
-    # the players on the team
-# Sample output
-    # Sharks
-    # Frank Jones, YES, Jim and Jan Jones
-    # Sarah Palmer, YES, Robin and Sari Washington
-    # Joe Smith, NO, Bob and Jamie Smith
-
-# EXTRA CREDIT (1/2)
-    # Create 18 text files, to serve as welcome letters to the players' guardians
-        # 1 file should be created for each player
-        # Use the players name as the name of the file
-            # lowercase
-            # underscore between first and last name
-            # E.g. - "jimmy_johns.txt
-
-# EXTRA CREDIT (2/2)
-    # Ensure that each file includes the following: 
-        # Begin with "Dear [guardian(s) name(s)]"
-        # player's name
-        # team name
-        # date & time of first practice
