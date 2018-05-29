@@ -1,3 +1,7 @@
+# Aaron Pope
+# 05/17/2018
+# Treehouse TechDegree - Python, Unit 1: Build a Soccer League
+
 import random
 
 def generate_welcome_letter(player, team):
