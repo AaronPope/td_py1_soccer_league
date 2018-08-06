@@ -18,3 +18,4 @@ Their first practice is on {} at {:%H:%M}.""".format(
             team["team_name"].upper(),
             team["first_practice_info"].date(),
             team["first_practice_info"].time()))
+            
